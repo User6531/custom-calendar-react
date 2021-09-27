@@ -1,4 +1,4 @@
-export default function buildTableCalendar(currentDay) {
+export default function buildCalendar(currentDay) {
     const startDayOfTheMonth = currentDay.startOf('month').startOf('week');
     const endDayOfTheMonth = currentDay.endOf('month').endOf('week');
     let day = startDayOfTheMonth.minus({day: 1});

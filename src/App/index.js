@@ -1,9 +1,13 @@
 import React from 'react';
-import Calendar from '../Calendar/';
-
+import CalendarTable from '../CalendarTable/';
+import { DateTime } from 'luxon';
+  
 const App = () => {
+
+  const today = DateTime.now();
+
   return (
-    <Calendar />
+    <CalendarTable today={today}/>
   );
 }
 
