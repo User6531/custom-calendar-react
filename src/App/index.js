@@ -1,5 +1,5 @@
 import React from 'react';
-import CalendarTable from '../CalendarTable/';
+import Calendar from '../Calendar/';
 import { DateTime } from 'luxon';
   
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
   const today = DateTime.now();
 
   return (
-    <CalendarTable today={today}/>
+    <Calendar today={today}/>
   );
 }
 
