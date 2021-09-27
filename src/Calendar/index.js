@@ -5,7 +5,7 @@ import dayStyles from "./dayStyles.js";
 import generateId from "./generateId.js";
 import S from './styled.js';
 
-export default function CalendarTable({today}) {
+export default function Calendar({today}) {
 
     const [calendar, setCalendar] = useState([]);
     const [selectedDay, setSelectedDay] = useState(today);
